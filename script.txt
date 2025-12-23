@@ -1,0 +1,165 @@
+<script>
+  function showTab(tabId) {
+    const tabs = document.querySelectorAll('.tab-content');
+    tabs.forEach(tab => tab.classList.remove('active-tab'));
+    document.getElementById(tabId).classList.add('active-tab');
+  }
+
+  function showSubTab(subId) {
+    const subs = document.querySelectorAll('.sub-tab-content');
+    subs.forEach(sub => sub.classList.remove('active-sub-tab'));
+    document.getElementById(subId).classList.add('active-sub-tab');
+  }
+
+
+
+document.getElementById('podcast-heading').addEventListener('click', function () {
+    // Hide everything except the video
+    document.getElementById('episodes-section').style.display = 'none';
+    this.style.display = 'none'; // hide the heading itself
+    document.getElementById('main-video').style.display = 'block';
+    document.getElementById('main-video').src += '?autoplay=1'; // autoplay
+  });
+
+ 
+
+
+
+  function showMenu() {
+    document.getElementById('nav-links').classList.add('show');
+  }
+
+  function hideMenu() {
+    document.getElementById('nav-links').classList.remove('show');
+  }
+
+function showSection(id) {
+    // Hide all sections
+    document.querySelectorAll('.section').forEach(sec => {
+      sec.style.display = 'none';
+    });
+    // Show the selected section
+    document.getElementById(id).style.display = 'block';
+  }
+
+  function showSection(id) {
+  document.querySelectorAll('.tab-content').forEach(el => el.style.display = 'none');
+  document.getElementById(id).style.display = 'block';
+
+}
+
+  // Hide all tab-content sections
+  function hideAll() {
+    document.querySelectorAll('.tab-content').forEach(el => {
+      el.style.display = 'none';
+    });
+  }
+
+  // Show a specific tab by ID (for main navigation)
+  function showTab(tabId) {
+    hideAll();
+    const section = document.getElementById(tabId);
+    if (section) {
+      section.style.display = 'block';
+    }
+  }
+
+  // Show a specific section inside a tab (for Next/Back buttons)
+  function showSection(sectionId) {
+    hideAll();
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.style.display = 'block';
+    }
+  }
+
+  // Start with Mentor tab visible
+  window.onload = function() {
+    hideAll();
+    };
+
+  function showTab(tabId) {
+  hideAll();
+  const section = document.getElementById(tabId);
+  if (section) {
+    section.style.display = 'block';
+  }
+}
+
+function hideAll() {
+    document.querySelectorAll('.tab-content').forEach(el => {
+      el.style.display = 'none';
+    });
+  }
+
+  function showSection(id) {
+    hideAll();
+    const section = document.getElementById(id);
+    if (section) {
+      section.style.display = 'block';
+    }
+  }
+
+  // Hide everything on page load
+  window.onload = function() {
+    hideAll();
+    // Optionally show a default section, or leave all hidden
+  };
+function hideAll() {
+    document.querySelectorAll('.tab-content').forEach(el => el.style.display = 'none');
+  }
+
+  function showSection(id) {
+    hideAll();
+    document.getElementById(id).style.display = 'block';
+  }
+
+  let educationVisible = false;
+  function showTab(tabId) {
+    const education = document.getElementById('education');
+  const nextPage = document.getElementById('nextPage');
+    
+
+
+    education.style.display = 'none';
+    nextPage.style.display = 'none';
+
+    if (!educationVisible) {
+      education.style.display = 'block';
+      educationVisible = true;
+    } else {
+      educationVisible = false;
+    }
+  }
+
+  // Start with all sections hidden
+  hideAll();
+  
+  // Hide all tab-content sections
+  function hideAll() {
+    document.querySelectorAll('.tab-content').forEach(el => {
+      el.style.display = 'none';
+    });
+  }
+
+  // Show a specific tab by ID
+  function showTab(tabId) {
+    hideAll();
+    const section = document.getElementById(tabId);
+    if (section) {
+      section.style.display = 'block';
+    }
+  }
+
+  // Show a specific section inside a tab (for Next/Back buttons)
+  function showSection(id) {
+    hideAll();
+    const section = document.getElementById(id);
+    if (section) {
+      section.style.display = 'block';
+    }
+  }
+
+  // Start with Profession tab hidden, only show when clicked
+  hideAll();
+</script>

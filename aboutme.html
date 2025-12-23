@@ -1,0 +1,377 @@
+
+<!DOCTYPE html>
+<html lang="en"  dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>document</title>
+        <link rel="stylesheet" href="style.css">
+        <body>
+          <ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="aboutme.html">About Nandan</a></li>
+  <li><a href="article.html">Opinion</a></li>
+  <li><a href="podcast.html">Podcast - Switch with Hushl</a></li>
+  <li><a href="https://hansenleadershipinstitute.org/fellow/nandan-sharalaya/" target="_blank">My Story</a></li>
+  <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+
+          <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+<img src="image/user.jpeg"  alt="Profile Picture" class="round-profile" >
+                        </div>
+                        <ul>
+  
+<!-- About Me stays above -->
+<div class="about-col-2">
+  <h1 class="sub-title">About Me</h1>
+  
+  <p>
+    Over the last decade, Nandan has worked in varied roles across impact investing, sustainability, consulting, non-profits, academia and politics in Asia, Africa and Europe. 
+
+Based in the United Kingdom, he is currently a Programme Lead at Climate Catalyst, an international non-profit start-up dedicated to galvanising the collective power of businesses, investors and civil society to influence and accelerate policy change. 
+  </p>
+</div>
+</div> <!-- End of .row -->
+</div> <!-- End of .container -->
+
+<!-- NEW SECTION: Tabs below the logo -->
+<div class="container">
+  <div class="tab-titles">
+    <p class="tab-links" onclick="showTab('education')">Education</p>
+    <p class="tab-links" onclick="showTab('Profession')">Profession</p>
+    <p class="tab-links"  onclick="showTab('Mentor')">Mentor</p>
+    <p class="tab-links" onclick=" showTab('Podcast')">Podcast</p>
+    <p class="tab-links" onclick=" showTab('Personal')">Personal</p>
+  </div>
+
+  <!-- Tab Content Sections -->
+  <div id="education" class="tab-content">
+    <h1>Education</h1>
+    <div id="master">
+      <h1>Master's Degree</h1>
+      <p><h3>Nandan holds a Masters’ degree in International Studies and Diplomacy, majoring in International Economics and Energy & Climate Policy from the School of Oriental and African Studies (SOAS), University of London. He has a Bachelor’s degree in Media and Communication from Symbiosis International University, India.</p></h3>
+      <img src="image/master.jpeg" alt="Master Photo" class="medium-image"/>
+      <p><h3>
+        At the School of Oriental and African Studies, University of London.
+      </p></h3>
+      <button class="next-btn" onclick="showSection('nextPage')">Next</button>
+      <button class="next-btn" onclick="hideAll()">Back</button>
+    </div>
+  </div>
+
+  <div id="nextPage" class="tab-content">
+    <h1>Further Achievements</h1>
+    <p><h2>
+      In 2016, he was a Fred J Hansen Leadership Fellow at the University of San Diego’s School of Leadership and Education Sciences.
+</p></h2>
+    <img src="image/school.png.jpeg" class="medium-image"/>
+    <P><h3>Won a prestigious scholarship to represent India at the Hansen Leadership Institute in San Diego, USA</P></h3>
+    <button class="next-btn" onclick="showSection('education')">Back</button>
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+<!-- Profession tab menu -->
+<div id="Profession" class="tab-content">
+  <h2>Profession</h2>
+  <p>Select a section to view:</p>
+  <button class="next-btn" onclick="showSection('AnnualMeeting')">Annual Meeting</button>
+  <button class="next-btn" onclick="showSection('GreenSteel')">Green Steel</button>
+  <button class="next-btn" onclick="showSection('ICL')">India Climate Leaders</button>
+  <button class="next-btn" onclick="showSection('Omidyar Network India')">Omidyar Network India</button>
+  <button class="next-btn" onclick="showSection('FTI Consulting')">FTI Consulting</button>
+  <button class="next-btn" onclick="showSection('German Chancellor Fellow')">German Chancellor Fellow</button>
+  <button class="next-btn" onclick="showSection('PRS Legislative Research')">PRS Legislative Research</button>
+</div>
+  
+
+
+
+  <div id="AnnualMeeting" class="tab-content">
+    <h1><b>Annual Meeting</h1></b>
+    <img src="image/annual.png.jpeg" alt="Annual Photo" class="medium-image"/>
+    <p><h3>At Climate Catalyst's 2023 annual retreat in Barcelona, Spain</p></h3>
+    <button class="next-btn" onclick="showSection('GreenSteel')">Next</button>
+    <button class="next-btn" onclick="showSection('Profession')">Back</button>
+  </div>
+</div>
+
+<div id="GreenSteel" class="tab-content">
+  <h1><b>Green Steel Network annual meeting</h1></b>
+  <img src="image/speech.png.jpeg" alt="Green Steel Photo" class="medium-image"/>
+  <p><h3> on technology pathways to decarbonise the steel sector at the 2024 India Green Steel Network annual meeting in New Delhi, India</p></h3>
+  <button class="next-btn" onclick="showSection('ICL')">Next</button>
+  <button class="next-btn" onclick="showSection('AnnualMeeting')">Back</button>
+</div>
+
+<div id="ICL" class="tab-content">
+  <h1><b>India Climate Leaders (ICL)</h1></b>
+   <p><h3>In his previous role at India Climate Collaborative, he led India Climate Leaders (ICL), an initiative focused on building the climate philanthropic ecosystem in India, working with partners like Rockefeller Foundation and Climate Lead. </p></h3>
+   <img src="ICG.jpeg" alt="ICG"  class="medium-image"/>
+   <P><h3>At ICC, my role was to develop a first of its kind cohort of domestic philanthropic leaders in India committed to moving the needle on climate</P></h3>
+   <button class="next-btn" onclick="showSection('Omidyar Network India')">Next</button>
+  <!-- Back goes to GreenSteel -->
+  <button class="next-btn" onclick="showSection('GreenSteel')">Back</button>
+</div>
+
+<div id="Omidyar Network India" class="tab-content">
+  <h2>Omidyar Network India</h2>
+   <p><b><h3>Between 2020-23 at Omidyar Network India, he sourced and managed investments across the areas of Digital Society, Governance & Citizen Engagement and Property Rights initiatives. He also led the firm’s Non-Profit Sector Development and Migration portfolios.
+</p></b></h3>
+   <img src="oni.jpeg" alt="oni"  class="medium-image"/>
+   <P>Speaking at the launch of the Safe & Responsible Migration Initiative (SRMI), a first of it's kind state government initiative that I helped conceptualise and lead</P>
+   <button class="next-btn" onclick="showSection('FTI Consulting')">Next</button>
+  <!-- Back goes to ICL -->
+  <button class="next-btn" onclick="showSection('ICL')">Back</button>
+</div>
+
+<div id="FTI Consulting" class="tab-content">
+  <h2>FTI Consulting</h2>
+   <p>In consulting engagements at FTI Consulting, he was advising clients like Virgin Hyperloop One, Abu Dhabi Investment Authority, DP World, Responsible Mica Initiative, etc. on their public affairs and communications strategy.
+</p>
+   <img src="FC.jpeg" alt="oni"  class="medium-image"/>
+   <P>At FTI Consulting, I developed a case for the firm's entry into sustainability consulting and developed unique ESG and investor action-focused thought leadership initiatives, such as the Asia Disclosure Index</P>
+   <img src="china.jpeg" alt="china"  class="medium-image"/>
+   <p>Speaking on the future of multi-modal transportation at the AvH Futures Forum in Hangzhou, China</p>
+
+   <button class="next-btn" onclick="showSection('German Chancellor Fellow')">Next</button>
+  <!-- Back goes to Omidyar -->
+  <button class="next-btn" onclick="showSection('Omidyar Network India')">Back</button>
+</div>
+
+<div id="German Chancellor Fellow" class="tab-content">
+  <h2>German Chancellor Fellow </h2>
+   <p>Between 2016-18, Nandan was based in Berlin as a German Chancellor Fellow (Alexander von Humboldt Foundation) and was a visiting scholar at WHU - Otto Beisheim School of Management.
+</p>
+   <img src="mem.jpeg" alt="mem"  class="medium-image" /><br><br>
+   <P>I was a Visiting Fellow at the Institute of Industrial Organisation, WHU Otto Beisheim School of Management, Germany's premier business school. My research was focused on building urban climate resilience in Indian and European cities</P><br>
+   <img src="image/lang.jpeg" alt="lang"  class="medium-image"/><br><br>
+   <P> Giving my first short speech in German in Bonn, Germany at the end of an intensive language course. My proficiency in German and French though remains at A1. However, I am conversant in 4 Indian languages
+</P>
+   <button class="next-btn" onclick="showSection('PRS Legislative Research.')">Next</button>
+  <!-- Back goes to FTI -->
+  <button class="next-btn" onclick="showSection('FTI Consulting')">Back</button>
+</div>
+
+<div id="PRS Legislative Research." class="tab-content">
+  <h2>PRS Legislative Research. </h2>
+   <p>Nandan began his career managing legislative strategy for over a 100+ Members of Parliament from both the houses, while serving as Chief of Staff to Member of Parliament Professor Rajeev Gowda. He has also been a LAMP Fellow (Legislative Assistant to an MP) with PRS Legislative Research.
+</p>
+   <img src="image/capital.jpeg" alt="mem"  class="medium-image"/><br><br>
+   <P>Co-authored a book chapter on cronyism and its links to Indian politics. The chapter has since been widely cited in leading journals and books</P>
+   <img src="image/thou.jpeg" alt="lang" class="medium-image">
+   <P> Several high-profile political and business leaders have shared my writings in their social channels including former UN Undersecretary General Shashi Tharoor
+</P>
+<button class="next-btn" onclick="showSection('German Chancellor Fellow')">Back</button>
+    <button class="next-btn" onclick="showSection('Profession')">Home</button>
+</div>
+
+
+
+  <!-- Mentor tab menu -->
+  <div id="Mentor" class="tab-content">
+    <h2>Mentor</h2>
+    <p>Select a section to view:</p>
+    <button class="next-btn" onclick="showSection('mitSchoolOfGovernment')">MIT School of Government</button>
+    <button class="next-btn" onclick="showSection('mintSection')">Mint</button>
+     
+  </div>
+
+  <!-- MIT School of Government section -->
+  <div id="mitSchoolOfGovernment" class="tab-content">
+    <h2>MIT School of Government</h2>
+    <p>He is a visiting faculty in several media and policy schools in India and internationally. 
+       He has taught courses and workshops in public policy, design thinking, international development, 
+       negotiation strategy and political communication at the MIT School of Government, University of Minnesota, 
+       Jindal University etc.</p>
+    <img src="image/MIT.jpeg" alt="MIT School"  class="medium-image"/>
+    <p>I teach a course in parliamentary policies and political leadership at the MIT School of Government in Pune, India and have done so for over 5 years.</p>
+    <button class="next-btn" onclick="showSection('mintSection')">Next</button>
+    <button class="next-btn" onclick="showSection('Mentor')">Back</button>
+  </div>
+
+  <!-- Mint section -->
+  <div id="mintSection" class="tab-content">
+    <h2>Mint</h2>
+    <p>In the past, his writings have appeared in several national and international magazines and portals 
+       including The Conversation, Huffington Post, U.S News, The Diplomat, Scroll, Mint etc.</p>
+    <img src="image/mint.jpeg" alt="Mint"  class="medium-image"/>
+    <p>To read all my writings, click on the Opinions section of this website.</p>
+    <button class="next-btn" onclick="showSection('mitSchoolOfGovernment')">Back</button>
+    <button class="next-btn" onclick="showSection('Mentor')">Home</button>
+  </div>
+
+  <div id="Podcast" class="tab-content">
+    <h2>Podcast</h2>
+    <p>Select a section to view:</p>
+    <button class="next-btn" onclick="showSection('Podcasthushl')">Podcast</button>
+    </div>
+   
+<div id="Podcasthushl" class="tab-content">
+    <h2>Podcast-Switch with Hushl</h2>
+    <p>Outside of work, Nandan enjoys playing badminton, finding joy in cricket and Bollywood trivia, reading business non-fiction, savouring South Asian cuisine, and sharing his interests as a podcast host.
+    <img src="image/podcast.jpeg" alt="Mint"  class="medium-image"/>
+    <p>To read all my writings, click on the Opinions section of this website.</p>
+    <button class="next-btn" onclick="showSection('Podcast')">Home</button>
+  </div>
+
+  <div id="Personal" class="tab-content">
+    <h2>Royal Challengers Bengaluru </h2>
+    <p>Select a section to view:</p>
+    <button class="next-btn" onclick="showSection('Radhika Acharya')">Personal</button>
+    </div>
+   
+<div id="Radhika Acharya" class="tab-content">
+    <h2>Dr. Radhika Acharya</h2>
+    <p>Nandan alternates his time between Manchester, United Kingdom where he is currently based with his wife Dr. Radhika Acharya and Bangalore, where he calls home. His early years include 14 years spent living in Nigeria.
+    <img src="image/Radha.jpeg" alt="Mint"  class="small-image" width="450" height="150"/>
+    <p>Supporting my favourite team the Royal Challengers Bengaluru at the Chinnaswamy cricket stadium in Bangalore
+Nandan hopes that one day he will be able to backpack across 100 countries (58 more to go!), that the Royal Challengers Bangalore will win an IPL trophy, and that he will start a South Indian snack bar — all of which seem like distant dreams today!</p>
+    <button class="next-btn" onclick="showSection('Personal')">home</button>
+  </div>
+
+
+  <script>
+function showSection(id) {
+    // Hide all sections
+    document.querySelectorAll('.section').forEach(sec => {
+      sec.style.display = 'none';
+    });
+    // Show the selected section
+    document.getElementById(id).style.display = 'block';
+  }
+
+  function showSection(id) {
+  document.querySelectorAll('.tab-content').forEach(el => el.style.display = 'none');
+  document.getElementById(id).style.display = 'block';
+
+}
+
+  // Hide all tab-content sections
+  function hideAll() {
+    document.querySelectorAll('.tab-content').forEach(el => {
+      el.style.display = 'none';
+    });
+  }
+
+  // Show a specific tab by ID (for main navigation)
+  function showTab(tabId) {
+    hideAll();
+    const section = document.getElementById(tabId);
+    if (section) {
+      section.style.display = 'block';
+    }
+  }
+
+  // Show a specific section inside a tab (for Next/Back buttons)
+  function showSection(sectionId) {
+    hideAll();
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.style.display = 'block';
+    }
+  }
+
+  // Start with Mentor tab visible
+  window.onload = function() {
+    hideAll();
+    };
+
+  function showTab(tabId) {
+  hideAll();
+  const section = document.getElementById(tabId);
+  if (section) {
+    section.style.display = 'block';
+  }
+}
+
+function hideAll() {
+    document.querySelectorAll('.tab-content').forEach(el => {
+      el.style.display = 'none';
+    });
+  }
+
+  function showSection(id) {
+    hideAll();
+    const section = document.getElementById(id);
+    if (section) {
+      section.style.display = 'block';
+    }
+  }
+
+  // Hide everything on page load
+  window.onload = function() {
+    hideAll();
+    // Optionally show a default section, or leave all hidden
+  };
+function hideAll() {
+    document.querySelectorAll('.tab-content').forEach(el => el.style.display = 'none');
+  }
+
+  function showSection(id) {
+    hideAll();
+    document.getElementById(id).style.display = 'block';
+  }
+
+  let educationVisible = false;
+  function showTab(tabId) {
+    const education = document.getElementById('education');
+  const nextPage = document.getElementById('nextPage');
+    
+
+
+    education.style.display = 'none';
+    nextPage.style.display = 'none';
+
+    if (!educationVisible) {
+      education.style.display = 'block';
+      educationVisible = true;
+    } else {
+      educationVisible = false;
+    }
+  }
+
+  // Start with all sections hidden
+  hideAll();
+  
+  // Hide all tab-content sections
+  function hideAll() {
+    document.querySelectorAll('.tab-content').forEach(el => {
+      el.style.display = 'none';
+    });
+  }
+
+  // Show a specific tab by ID
+  function showTab(tabId) {
+    hideAll();
+    const section = document.getElementById(tabId);
+    if (section) {
+      section.style.display = 'block';
+    }
+  }
+
+  // Show a specific section inside a tab (for Next/Back buttons)
+  function showSection(id) {
+    hideAll();
+    const section = document.getElementById(id);
+    if (section) {
+      section.style.display = 'block';
+    }
+  }
+
+  // Start with Profession tab hidden, only show when clicked
+  hideAll();
+  </script>
+  </body>
+  </head>
+  </html>
